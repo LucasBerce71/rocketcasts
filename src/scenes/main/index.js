@@ -1,10 +1,27 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { View, Text, StyleSheet } from 'react-native';
 
-const Main = () => (
-  <View>
-    <Text>Main component 2</Text>
-  </View>
-);
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
-export default Main;
+class Main extends Component {
+  static navigationOptions = {
+    header: null,
+  };
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Welcome to RocketNative Boilerplate</Text>
+      </View>
+    );
+  }
+}
+
+export default connect(() => ({}))(Main);

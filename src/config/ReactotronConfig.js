@@ -9,7 +9,9 @@ if (Config.useReactotron) {
   Reactotron
     .configure()
     .use(tronsauce())
-    .use(reactotronRedux({ onRestore: Immutable }))
+    .use(reactotronRedux({
+      onRestore: state => ({ ...Immutable(state), nav: state.nav }),
+    }))
     .useReactNative()
     .connect();
 
