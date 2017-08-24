@@ -1,7 +1,8 @@
+import Config from 'react-native-config';
 import { create } from 'apisauce';
 
 const api = create({
-  baseURL: 'http://localhost:3000/',
+  baseURL: Config.API_URL,
 });
 
 export default api;
