@@ -1,14 +1,23 @@
 import React from 'react';
+import { View, Text } from 'react-native';
+import Api from './lib/Api';
 
-import {
-  View,
-  Text,
-} from 'react-native';
+import './config/ReactotronConfig';
 
-const RocketCast = () => (
-  <View>
-    <Text>Hey</Text>
-  </View>
-);
+class RocketCast extends React.Component {
+  constructor(props) {
+    super(props);
+
+    Api.get('/podcasts');
+  }
+
+  render() {
+    return (
+      <View>
+        <Text>Hey</Text>
+      </View>
+    );
+  }
+}
 
 export default RocketCast;
