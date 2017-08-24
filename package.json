@@ -13,9 +13,15 @@
     "apisauce": "^0.14.1",
     "react": "16.0.0-alpha.12",
     "react-native": "0.47.2",
+    "react-native-config": "^0.3.0",
+    "react-redux": "^5.0.6",
+    "react-test-renderer": "16.0.0-alpha.12",
     "reactotron-apisauce": "^1.12.2",
     "reactotron-react-native": "^1.12.2",
-    "react-native-config": "^0.3.0"
+    "reactotron-redux": "^1.12.2",
+    "redux": "^3.7.2",
+    "reduxsauce": "^0.6.0",
+    "seamless-immutable": "^7.1.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -29,8 +35,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-react-native": "^3.0.1",
-    "jest": "20.0.4",
-    "react-test-renderer": "16.0.0-alpha.12"
+    "jest": "20.0.4"
   },
   "jest": {
     "preset": "react-native"

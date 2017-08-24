@@ -1,23 +1,18 @@
+import 'config/ReactotronConfig';
+
 import React from 'react';
 import { View, Text } from 'react-native';
-import Api from './lib/Api';
+import { Provider } from 'react-redux';
+import createStore from './store';
 
-import './config/ReactotronConfig';
+const store = createStore();
 
-class RocketCast extends React.Component {
-  constructor(props) {
-    super(props);
-
-    Api.get('/podcasts');
-  }
-
-  render() {
-    return (
-      <View>
-        <Text>Hey</Text>
-      </View>
-    );
-  }
-}
+const RocketCast = () => (
+  <Provider store={store}>
+    <View>
+      <Text>Hey</Text>
+    </View>
+  </Provider>
+);
 
 export default RocketCast;
