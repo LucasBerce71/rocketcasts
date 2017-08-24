@@ -1,18 +1,14 @@
 import 'config/ReactotronConfig';
 
 import React from 'react';
-import { View, Text } from 'react-native';
 import { Provider } from 'react-redux';
+import Navigator from './navigation';
 import createStore from './store';
 
 const store = createStore();
 
-const RocketCast = () => (
+export default () => (
   <Provider store={store}>
-    <View>
-      <Text>Hey</Text>
-    </View>
+    <Navigator />
   </Provider>
 );
-
-export default RocketCast;

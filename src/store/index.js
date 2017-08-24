@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
+import navReducer from 'navigation/reducer';
 import configureStore from './configureStore';
-import { user } from './reducers';
 
 export default () => {
   const rootReducer = combineReducers({
-    user,
+    nav: navReducer,
   });
 
   return configureStore(rootReducer);
