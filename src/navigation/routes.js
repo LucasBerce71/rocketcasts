@@ -1,9 +1,19 @@
 import { StackNavigator } from 'react-navigation';
 
-import Main from 'scenes/main';
+import PodcastList from 'scenes/podcasts/pages/list';
 
 const Routes = StackNavigator({
-  Main: { screen: Main },
+  PodcastList: { screen: PodcastList },
+}, {
+  navigationOptions: {
+    headerStyle: {
+      backgroundColor: '#333',
+    },
+    headerTitleStyle: {
+      fontSize: 12,
+      color: '#FFF',
+    },
+  },
 });
 
 export default Routes;
