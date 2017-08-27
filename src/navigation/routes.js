@@ -1,17 +1,31 @@
-import { StackNavigator } from 'react-navigation';
+import { TabNavigator } from 'react-navigation';
+import { colors } from 'styles';
 
-import PodcastList from 'scenes/podcasts/pages/list';
+import Home from 'scenes/home';
+import PodcastsPending from 'scenes/podcasts/pages/pending';
+import PodcastsSearch from 'scenes/podcasts/pages/search';
+import Profile from 'scenes/profile';
 
-const Routes = StackNavigator({
-  PodcastList: { screen: PodcastList },
+const Routes = TabNavigator({
+  Home: { screen: Home },
+  PodcastsPending: { screen: PodcastsPending },
+  PodcastsSearch: { screen: PodcastsSearch },
+  Profile: { screen: Profile },
 }, {
-  navigationOptions: {
-    headerStyle: {
-      backgroundColor: '#333',
+  swipeEnabled: false,
+  animationEnabled: false,
+  lazy: true,
+  tabBarOptions: {
+    activeTintColor: colors.text,
+    inactiveTintColor: colors.textInactive,
+    style: {
+      backgroundColor: colors.header,
+      paddingVertical: 5,
+      height: 54,
     },
-    headerTitleStyle: {
-      fontSize: 12,
-      color: '#FFF',
+    labelStyle: {
+      fontSize: 11,
+      fontFamily: 'Roboto',
     },
   },
 });

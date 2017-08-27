@@ -13,7 +13,8 @@ const general = {
   sectionTitle: {
     color: colors.text,
     fontWeight: 'bold',
-    fontSize: fonts.medium,
+    fontSize: fonts.regular,
+    alignSelf: 'center',
   },
 };
 

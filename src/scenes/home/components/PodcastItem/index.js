@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
 import PropTypes from 'prop-types';
+
+import Text from 'components/Text';
 
 import styles from './styles';
 
@@ -10,6 +12,7 @@ export default class PodcastItem extends Component {
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       thumbnail: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
     }).isRequired,
     style: View.propTypes.style,
   };
@@ -28,9 +31,13 @@ export default class PodcastItem extends Component {
         />
         <Text
           style={styles.title}
-          numberOfLines={2}
+          numberOfLines={1}
         >
           {this.props.podcast.title}
+        </Text>
+
+        <Text style={styles.description}>
+          {this.props.podcast.description}
         </Text>
       </View>
     );
