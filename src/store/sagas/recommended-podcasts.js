@@ -1,4 +1,4 @@
-import Api from 'lib/Api';
+import Api from 'services/Api';
 import { call, put } from 'redux-saga/effects';
 import ActionCreators from 'store/ducks/recommended-podcasts';
 

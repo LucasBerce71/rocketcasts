@@ -1,8 +1,9 @@
+/* Core */
 import React, { Component } from 'react';
+
+/* Presentational */
 import { View, ScrollView } from 'react-native';
-
 import Icon from 'react-native-vector-icons/EvilIcons';
-
 import Header from 'components/Header';
 
 import styles from './styles';

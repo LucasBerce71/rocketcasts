@@ -1,7 +1,9 @@
+/* Core */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, ScrollView, ActivityIndicator } from 'react-native';
 
+/* Presentational */
+import { View, ScrollView, ActivityIndicator } from 'react-native';
 import Text from 'components/Text';
 import PodcastItem from 'scenes/trending/components/PodcastItem';
 
