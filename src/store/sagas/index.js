@@ -1,4 +1,4 @@
-import { takeEvery } from 'redux-saga/effects';
+import { takeLatest } from 'redux-saga/effects';
 
 /* Types */
 import { RecommendedPodcastsTypes } from 'store/ducks/recommended-podcasts';
@@ -10,7 +10,7 @@ import { getTrendingEpisodes } from './trending-episodes';
 
 export default function* root() {
   yield [
-    takeEvery(RecommendedPodcastsTypes.RECOMMENDED_REQUEST, getRecommendedPodcasts),
-    takeEvery(TrendingEpisodesTypes.TRENDING_REQUEST, getTrendingEpisodes),
+    takeLatest(RecommendedPodcastsTypes.RECOMMENDED_REQUEST, getRecommendedPodcasts),
+    takeLatest(TrendingEpisodesTypes.TRENDING_REQUEST, getTrendingEpisodes),
   ];
 }
