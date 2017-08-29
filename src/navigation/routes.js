@@ -1,13 +1,13 @@
 import { TabNavigator } from 'react-navigation';
 import { colors } from 'styles';
 
-import Home from 'scenes/home';
+import Trending from 'scenes/trending';
 import PodcastsPending from 'scenes/podcasts/pages/pending';
 import PodcastsSearch from 'scenes/podcasts/pages/search';
 import Profile from 'scenes/profile';
 
 const Routes = TabNavigator({
-  Home: { screen: Home },
+  Trending: { screen: Trending },
   PodcastsPending: { screen: PodcastsPending },
   PodcastsSearch: { screen: PodcastsSearch },
   Profile: { screen: Profile },

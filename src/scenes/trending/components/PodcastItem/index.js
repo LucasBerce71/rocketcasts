@@ -9,10 +9,10 @@ import styles from './styles';
 export default class PodcastItem extends Component {
   static propTypes = {
     podcast: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      thumbnail: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
+      id: PropTypes.number,
+      title: PropTypes.string,
+      thumbnail: PropTypes.string,
+      description: PropTypes.string,
     }).isRequired,
     style: View.propTypes.style,
   };

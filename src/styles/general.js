@@ -15,6 +15,7 @@ const general = {
     fontWeight: 'bold',
     fontSize: fonts.regular,
     alignSelf: 'center',
+    marginBottom: metrics.doubleBaseMargin,
   },
 };
 

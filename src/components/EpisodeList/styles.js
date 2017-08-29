@@ -4,10 +4,6 @@ import { general, metrics } from 'styles';
 const styles = StyleSheet.create({
   ...general,
 
-  list: {
-    marginTop: metrics.doubleBaseMargin,
-  },
-
   listItem: {
     marginTop: metrics.doubleBaseMargin,
   },

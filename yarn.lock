@@ -812,9 +812,9 @@ babel-preset-jest@^20.0.3:
   dependencies:
     babel-plugin-jest-hoist "^20.0.3"
 
-babel-preset-react-native@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-3.0.1.tgz#ad9e96e39eac6673f3382e9bea9d17c8aa95da3c"
+babel-preset-react-native@3.0.2-rc.0:
+  version "3.0.2-rc.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-3.0.2-rc.0.tgz#c7f7313184948a719078e90edd89c46a57e78b36"
   dependencies:
     babel-plugin-check-es2015-constants "^6.5.0"
     babel-plugin-react-transform "2.0.2"
@@ -4155,6 +4155,16 @@ reactotron-redux:
     reactotron-core-client "^1.12.2"
     redux "^3.7.1"
 
+reactotron-redux-saga:
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/reactotron-redux-saga/-/reactotron-redux-saga-1.12.2.tgz#12a3969e9928d83b861b15246d8ccc75e79b2cc8"
+  dependencies:
+    ramda "^0.24.1"
+    ramdasauce "^2.0.0"
+    reactotron-core-client "^1.12.2"
+    redux "^3.7.1"
+    redux-saga "^0.15.3"
+
 read-pkg-up@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-1.0.1.tgz#9d63c13276c065918d57f002a57f40a1b643fb02"
@@ -4218,6 +4228,14 @@ redux, redux@^3.7.1:
     lodash-es "^4.2.1"
     loose-envify "^1.1.0"
     symbol-observable "^1.0.3"
+
+redux-saga, redux-saga@^0.15.3:
+  version "0.15.6"
+  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.15.6.tgz#8638dc522de6c6c0a496fe8b2b5466287ac2dc4d"
+
+redux-thunk:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
 
 reduxsauce:
   version "0.6.0"

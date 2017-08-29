@@ -8,10 +8,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 0,
   },
 
-  list: {
-    marginTop: metrics.doubleBaseMargin,
-  },
-
   listItem: {
     marginHorizontal: metrics.baseMargin,
   },
