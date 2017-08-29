@@ -4233,10 +4233,6 @@ redux-saga, redux-saga@^0.15.3:
   version "0.15.6"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.15.6.tgz#8638dc522de6c6c0a496fe8b2b5466287ac2dc4d"
 
-redux-thunk:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
-
 reduxsauce:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/reduxsauce/-/reduxsauce-0.6.0.tgz#e3c4d23e1e4b87d901830f77aaf127098398f0ff"
