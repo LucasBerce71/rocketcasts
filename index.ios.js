@@ -1,5 +1,3 @@
-/* @flow */
-
 import RocketCast from './src';
 import { AppRegistry } from 'react-native';
 
