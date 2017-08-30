@@ -6,7 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean --force",
     "test": "jest",
-    "updateSnapshot": "jest --updateSnapshot",
+    "updateSnapshot": "jest -u",
     "android-dev": "ENVFILE=.env.dev react-native run-android",
     "android-prod": "ENVFILE=.env.prod react-native run-android",
     "build-android-prod": "export ENVFILE=.env.prod && cd android && ./gradlew assembleRelease && cd .."
@@ -26,6 +26,7 @@
     "reactotron-redux": "^1.12.2",
     "reactotron-redux-saga": "^1.12.2",
     "redux": "^3.7.2",
+    "redux-mock-store": "^1.2.3",
     "redux-saga": "^0.15.6",
     "reduxsauce": "^0.6.0",
     "seamless-immutable": "^7.1.2"
@@ -47,7 +48,7 @@
   "jest": {
     "preset": "react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-navigation)"
+      "./node_modules/(?!(jest-)?react-native|react-navigation)"
     ]
   },
   "rnpm": {

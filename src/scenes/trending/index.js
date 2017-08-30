@@ -16,7 +16,7 @@ import RecommendedPodcastsActions from 'store/ducks/recommended-podcasts';
 
 import styles from './styles';
 
-export class Trending extends Component {
+class Trending extends Component {
   static navigationOptions = {
     tabBarLabel: 'Em alta',
     tabBarIcon: ({ tintColor }) => (

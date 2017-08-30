@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component render correctly render correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#FFF",
+        "fontFamily": "Roboto",
+        "fontSize": 14,
+      },
+      Object {},
+    ]
+  }
+>
+  .
+</Text>
+`;
