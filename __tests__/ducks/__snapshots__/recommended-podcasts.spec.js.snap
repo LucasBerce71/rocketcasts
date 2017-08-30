@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`failure 1`] = `
+Object {
+  "data": Array [],
+  "error": true,
+  "loading": false,
+}
+`;
+
+exports[`request 1`] = `
+Object {
+  "data": Array [],
+  "error": null,
+  "loading": true,
+}
+`;
+
+exports[`success 1`] = `
+Object {
+  "data": Array [
+    "result",
+  ],
+  "error": null,
+  "loading": false,
+}
+`;

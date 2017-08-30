@@ -1,0 +1,22 @@
+{
+  "/podcasts": [
+    {
+      "id": 0,
+      "title": "PodNative",
+      "thumbnail": "https://www.novoda.com/blog/content/images/2016/06/reactive-nativingitup-png-800x600_q96.png",
+      "description": "106 episódios"
+    },
+    {
+      "id": 1,
+      "title": "GrokPodcast",
+      "thumbnail": "https://www.grokpodcast.com/images/2015/06/vitrine-138.jpg",
+      "description": "95 episódios"
+    },
+    {
+      "id": 2,
+      "title": "SwiftCast",
+      "thumbnail": "https://www.grokpodcast.com/images/2015/02/vitrine-128.jpg",
+      "description": "13 episódios"
+    }
+  ]
+}
