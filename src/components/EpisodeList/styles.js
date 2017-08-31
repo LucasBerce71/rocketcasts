@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { general, metrics } from 'styles';
+import { general, metrics, colors, fonts } from 'styles';
 
 const styles = StyleSheet.create({
   ...general,
@@ -10,6 +10,12 @@ const styles = StyleSheet.create({
 
   'listItem-first': {
     marginTop: 0,
+  },
+
+  emptyList: {
+    color: colors.textInactive,
+    fontSize: fonts.medium,
+    alignSelf: 'center',
   },
 });
 

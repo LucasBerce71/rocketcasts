@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`failure 1`] = `
+Object {
+  "data": Array [],
+  "error": true,
+  "loading": false,
+  "refreshing": false,
+}
+`;
+
+exports[`refresh 1`] = `
+Object {
+  "data": Array [],
+  "error": false,
+  "loading": false,
+  "refreshing": true,
+}
+`;
+
+exports[`request 1`] = `
+Object {
+  "data": Array [],
+  "error": null,
+  "loading": true,
+  "refreshing": false,
+}
+`;
+
+exports[`success 1`] = `
+Object {
+  "data": Array [
+    "result",
+  ],
+  "error": null,
+  "loading": false,
+  "refreshing": false,
+}
+`;
