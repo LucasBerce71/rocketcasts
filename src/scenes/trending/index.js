@@ -7,7 +7,6 @@ import { View, ScrollView } from 'react-native';
 import Header from 'components/Header';
 import EpisodeList from 'components/EpisodeList';
 import PodcastList from 'scenes/trending/components/PodcastList';
-import Icon from 'react-native-vector-icons/EvilIcons';
 
 /* Redux */
 import { connect } from 'react-redux';
@@ -17,13 +16,6 @@ import RecommendedPodcastsActions from 'store/ducks/recommended-podcasts';
 import styles from './styles';
 
 class Trending extends Component {
-  static navigationOptions = {
-    tabBarLabel: 'Em alta',
-    tabBarIcon: ({ tintColor }) => (
-      <Icon name={'chart'} size={32} color={tintColor} />
-    ),
-  };
-
   static propTypes = {
     recommendedRequest: PropTypes.func.isRequired,
     recommendedPodcasts: PropTypes.shape({

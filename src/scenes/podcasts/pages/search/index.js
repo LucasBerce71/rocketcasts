@@ -3,19 +3,11 @@ import React, { Component } from 'react';
 
 /* Presentational */
 import { View, ScrollView, TextInput } from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import Header from 'components/Header';
 
 import styles from './styles';
 
 class Search extends Component {
-  static navigationOptions = {
-    tabBarLabel: 'Buscar',
-    tabBarIcon: ({ tintColor }) => (
-      <Icon name={'search'} size={32} color={tintColor} />
-    ),
-  };
-
   render() {
     return (
       <View style={styles.container}>

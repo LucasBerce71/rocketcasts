@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 /* Presentational */
 import { View } from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import Header from 'components/Header';
 import EpisodeList from 'components/EpisodeList';
 
@@ -15,13 +14,6 @@ import PendingEpisodesActions from 'store/ducks/pending-episodes';
 import styles from './styles';
 
 class Pending extends Component {
-  static navigationOptions = {
-    tabBarLabel: 'Pendentes',
-    tabBarIcon: ({ tintColor }) => (
-      <Icon name={'archive'} size={32} color={tintColor} />
-    ),
-  };
-
   static propTypes = {
     pendingRequest: PropTypes.func.isRequired,
     pendingRefresh: PropTypes.func.isRequired,

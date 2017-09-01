@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { View, ListView, ActivityIndicator, RefreshControl } from 'react-native';
 
 import Text from 'components/Text';
-import EpisodeItem from 'components/EpisodeItem';
+import EpisodeItem from './components/EpisodeItem';
 
 import styles from './styles';
 

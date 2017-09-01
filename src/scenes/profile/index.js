@@ -3,19 +3,11 @@ import React, { Component } from 'react';
 
 /* Presentational */
 import { View, ScrollView } from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
 import Header from 'components/Header';
 
 import styles from './styles';
 
 class Profile extends Component {
-  static navigationOptions = {
-    tabBarLabel: 'Meu perfil',
-    tabBarIcon: ({ tintColor }) => (
-      <Icon name={'user'} size={32} color={tintColor} />
-    ),
-  };
-
   render() {
     return (
       <View style={styles.container}>

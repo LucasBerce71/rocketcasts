@@ -1,5 +1,6 @@
 import { TabNavigator } from 'react-navigation';
-import { colors } from 'styles';
+
+import Footer from 'components/Footer';
 
 import Trending from 'scenes/trending';
 import PodcastsPending from 'scenes/podcasts/pages/pending';
@@ -15,19 +16,7 @@ const Routes = TabNavigator({
   swipeEnabled: false,
   animationEnabled: false,
   lazy: true,
-  tabBarOptions: {
-    activeTintColor: colors.text,
-    inactiveTintColor: colors.textInactive,
-    style: {
-      backgroundColor: colors.header,
-      paddingVertical: 5,
-      height: 54,
-    },
-    labelStyle: {
-      fontSize: 11,
-      fontFamily: 'Roboto',
-    },
-  },
+  tabBarComponent: Footer,
 });
 
 export default Routes;
