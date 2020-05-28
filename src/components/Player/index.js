@@ -18,7 +18,7 @@ const Player = () => (
       </TouchableOpacity>
 
       <View style={styles.current}>
-        <Text style={styles.title}>Swift para desenvolvimento iOS</Text>
+        <Text style={styles.title}>Swift para desenvolvimento IOS</Text>
         <Text style={styles.description}>SwiftCast - 25 de agosto de 2017</Text>
       </View>
 
